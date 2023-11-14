@@ -32,8 +32,10 @@ export function Examples() {
     return (
         <Section id="examples"
                  title="Examples">
-          <Tabs buttons={
-            <div>
+          <Tabs
+          ButtonsContainer="menu"
+            buttons={
+            <>
               <TabButton  isSelected={selectedTopic === 'components'} 
                           onClick={() => handleSelect('components')}>Components</TabButton>
               <TabButton  isSelected={selectedTopic === 'jsx'}
@@ -42,7 +44,7 @@ export function Examples() {
                           onClick={() => handleSelect('props')}>Props</TabButton>
               <TabButton  isSelected={selectedTopic === 'state'} 
                           onClick={() => handleSelect('state')}>State</TabButton>
-            </div>
+            </>
           }>
             {tabContent}
           </Tabs>
