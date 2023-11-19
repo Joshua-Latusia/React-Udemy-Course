@@ -1,4 +1,5 @@
-import { Player } from "./Components/Player/Player.jsx"
+import { Player } from "./Components/Player/Player.jsx";
+import { GameBoard } from "./Components/GameBoard/GameBoard.jsx";
 
 function App() {
   
@@ -7,19 +8,18 @@ function App() {
     <main>
       <div id="game-container">
         <ol id="players">
-          <Player name="Player-1"
+          <Player initialName="Player-Jos"
                   symbol="X"/>
 
-          <Player name="Player-2"
+          <Player initialName="Player-Kim"
                   symbol="O"/>
         </ol>
         
         <h1>React Tic-Tac-Toe</h1>
 
-        GameBoard
+        <GameBoard/>
       </div>
 
-      LOG
     </main>
   )
 }
